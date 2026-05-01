@@ -1,3 +1,4 @@
+import tkinter as tk
 import customtkinter as ctk
 from cupcake import Editor, Languages
 
@@ -9,8 +10,11 @@ class PyCheevosPoC(ctk.CTk):
     def __init__(self):
         super().__init__()
 
-        self.title("PyCheevos UI - PoC Cupcake")
+        self.title("PyCheevos UI")
         self.geometry("1000x600")
+
+        # Adicione estas linhas:
+        self.iconbitmap("app/icone.ico")
 
         # Layout: Grid 1x2 (1 row, 2 columns)
         self.grid_rowconfigure(0, weight=1)
@@ -60,7 +64,8 @@ class PyCheevosPoC(ctk.CTk):
             print(f"Warning: Could not inject style directly. Error: {e}")
 
         # Injecting realistic PyCheevos test code
-        codigo_teste = """# ==========================================
+        codigo_teste = """
+# ==========================================
 # PyCheevos CORE - Set Logic
 # ==========================================
 from models.set import AchievementSet
