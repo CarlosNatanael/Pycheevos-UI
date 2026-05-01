@@ -12,8 +12,6 @@ class PyCheevosPoC(ctk.CTk):
 
         self.title("PyCheevos UI")
         self.geometry("1000x600")
-
-        # Adicione estas linhas:
         self.iconbitmap("app/icone.ico")
 
         # Layout: Grid 1x2 (1 row, 2 columns)
