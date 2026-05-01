@@ -44,23 +44,6 @@ class PyCheevosPoC(ctk.CTk):
         self.editor = Editor(self.right_frame, language=Languages.PYTHON)
         self.editor.pack(expand=True, fill="both")
 
-        # --- THE STYLE SURGERY ---
-        # Trying to force Cupcake's classic Tkinter to accept Dark Mode
-        try:
-            # Classic tk.Text properties (the core of .content)
-            self.editor.content.config(
-                bg="#1e1e1e",             # Dark gray background
-                fg="#d4d4d4",             # Light base text
-                insertbackground="white", # White blinking cursor
-                selectbackground="#264f78", # Text selection color (dark blue)
-                relief="flat",            # Removes the 90s 3D border
-                borderwidth=0
-            )
-            # Note: If Cupcake uses a Canvas for line numbers, 
-            # you might need to access something like `self.editor.linenumbers.config(bg="#1e1e1e")` in the future.
-        except Exception as e:
-            print(f"Warning: Could not inject style directly. Error: {e}")
-
         # Injecting realistic PyCheevos test code
         codigo_teste = """
 # ==========================================
@@ -82,6 +65,8 @@ def cheevo_level_1_logic():
 # ...
 """
         self.editor.content.insert("end", codigo_teste)
+        self.update_idletasks()
+        self.editor.content.event_generate("<KeyRelease>")
 
 if __name__ == "__main__":
     app = PyCheevosPoC()
