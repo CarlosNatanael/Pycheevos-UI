@@ -1,0 +1,122 @@
+# themes/pycheevos.toml
+# PyCheevos UI editor theme - Catppuccin Mocha palette
+# All fields are mandatory per cupcake's schema
+
+accent     = "#cba6f7"
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+border     = "#181825"
+cursor     = "#f5c2e7"
+
+[editor]
+selection    = "#313244"
+currentword  = "#2a2a3d"
+currentline  = "#26263a"
+found        = "#3d3418"
+foundcurrent = "#5a4a1a"
+
+[autocomplete]
+background       = "#313244"
+foreground       = "#cdd6f4"
+activebackground = "#45475a"
+activeforeground = "#cdd6f4"
+
+[breadcrumbs]
+background       = "#181825"
+foreground       = "#6c7086"
+activebackground = "#181825"
+activeforeground = "#cdd6f4"
+
+[linenumbers]
+background       = "#181825"
+foreground       = "#45475a"
+activebackground = "#181825"
+activeforeground = "#6c7086"
+
+[minimap]
+background = "#181825"
+
+[diffeditor]
+notexist    = "#313244"
+added       = "#1e3a2a"
+addedword   = "#1a3326"
+removed     = "#3a1e2a"
+removedword = "#5a1e2a"
+
+[scrollbar]
+background       = "#181825"
+activeBackground = "#45475a"
+
+[tree]
+background       = "#1e1e2e"
+foreground       = "#cdd6f4"
+activebackground = "#313244"
+
+# Syntax highlighting - Pygments token names
+[syntax]
+"Keyword"               = "#cba6f7"
+"Keyword.Constant"      = "#cba6f7"
+"Keyword.Declaration"   = "#cba6f7"
+"Keyword.Namespace"     = "#cba6f7"
+"Keyword.Pseudo"        = "#cba6f7"
+"Keyword.Reserved"      = "#cba6f7"
+"Keyword.Type"          = "#cba6f7"
+
+"Name"                  = "#cdd6f4"
+"Name.Attribute"        = "#89b4fa"
+"Name.Builtin"          = "#89b4fa"
+"Name.Builtin.Pseudo"   = "#89b4fa"
+"Name.Class"            = "#89dceb"
+"Name.Constant"         = "#fab387"
+"Name.Decorator"        = "#f38ba8"
+"Name.Entity"           = "#cdd6f4"
+"Name.Exception"        = "#f38ba8"
+"Name.Function"         = "#89b4fa"
+"Name.Function.Magic"   = "#89b4fa"
+"Name.Property"         = "#cdd6f4"
+"Name.Label"            = "#cdd6f4"
+"Name.Namespace"        = "#89dceb"
+"Name.Other"            = "#cdd6f4"
+"Name.Tag"              = "#f38ba8"
+"Name.Variable"         = "#cdd6f4"
+"Name.Variable.Class"   = "#cdd6f4"
+"Name.Variable.Global"  = "#cdd6f4"
+"Name.Variable.Instance"= "#cdd6f4"
+"Name.Variable.Magic"   = "#cdd6f4"
+
+"Literal.String"            = "#a6e3a1"
+"Literal.String.Affix"      = "#a6e3a1"
+"Literal.String.Backtick"   = "#a6e3a1"
+"Literal.String.Char"       = "#a6e3a1"
+"Literal.String.Delimiter"  = "#a6e3a1"
+"Literal.String.Doc"        = "#6c7086"
+"Literal.String.Double"     = "#a6e3a1"
+"Literal.String.Escape"     = "#fab387"
+"Literal.String.Heredoc"    = "#a6e3a1"
+"Literal.String.Interpol"   = "#a6e3a1"
+"Literal.String.Other"      = "#a6e3a1"
+"Literal.String.Regex"      = "#fab387"
+"Literal.String.Single"     = "#a6e3a1"
+"Literal.String.Symbol"     = "#a6e3a1"
+
+"Literal.Number"             = "#fab387"
+"Literal.Number.Bin"         = "#fab387"
+"Literal.Number.Float"       = "#fab387"
+"Literal.Number.Hex"         = "#fab387"
+"Literal.Number.Integer"     = "#fab387"
+"Literal.Number.Integer.Long"= "#fab387"
+"Literal.Number.Oct"         = "#fab387"
+
+"Comment"             = "#6c7086"
+"Comment.Hashbang"    = "#6c7086"
+"Comment.Multiline"   = "#6c7086"
+"Comment.Preproc"     = "#6c7086"
+"Comment.PreprocFile" = "#6c7086"
+"Comment.Single"      = "#6c7086"
+"Comment.Special"     = "#6c7086"
+
+"Operator"      = "#89dceb"
+"Operator.Word" = "#cba6f7"
+
+"Punctuation"        = "#cdd6f4"
+"Punctuation.Marker" = "#cdd6f4"
